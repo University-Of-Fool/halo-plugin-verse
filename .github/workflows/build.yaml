@@ -24,16 +24,16 @@ jobs:
       - uses: actions/checkout@v2
         with:
           submodules: true
-      - name: Set up JDK 17
+      - name: Set up JDK 21
         uses: actions/setup-java@v2
         with:
-          distribution: 'temurin'
+          distribution: 'graalvm'
           cache: 'gradle'
-          java-version: 17
+          java-version: 21
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 22
       - uses: pnpm/action-setup@v2.0.1
         name: Install pnpm
         id: pnpm-install
