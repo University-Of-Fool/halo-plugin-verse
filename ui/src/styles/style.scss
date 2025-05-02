@@ -1,0 +1,12 @@
+.ProseMirror {
+  .verse-block {
+    padding:5px 15px 15px 15px;
+    border: 1px solid #eee;
+  }
+  .verse-block::before{
+    content:"诗篇";
+    color: #ddd;
+    font-size:0.8rem;
+    padding-bottom: 5px;
+  }
+}

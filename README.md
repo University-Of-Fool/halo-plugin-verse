@@ -1,76 +1,17 @@
-# plugin-starter
+# halo-plugin-verse
 
-Halo 2.0 插件开发快速开始模板。
+适用于 Halo 的诗篇插件
 
-## 开发环境
+## 注意
 
-插件开发的详细文档请查阅：<https://docs.halo.run/developer-guide/plugin/introduction>
+由于不熟悉 Java，这个插件只是提供了一个含有 `class="verse-block"` 的 `div` 用来装诗篇，文章里的 style 并没有在这个插件里。你可能需要为它编写自己的 CSS。
 
-所需环境：
+## 使用
 
-1. Java 17
-2. Node 20
-3. pnpm 9
-4. Docker (可选)
+转到 Release 界面，下载 zip，喂给你的 Halo。
 
-克隆项目：
+“诗篇”节点在斜杠菜单中可用。（verse, poem, poetry, 诗 等都是可触发的）
 
-```bash
-git clone git@github.com:halo-sigs/plugin-starter.git
+## demo
 
-# 或者当你 fork 之后
-
-git clone git@github.com:{your_github_id}/plugin-starter.git
-```
-
-```bash
-cd path/to/plugin-starter
-```
-
-### 运行方式 1（推荐）
-
-> 此方式需要本地安装 Docker
-
-```bash
-# macOS / Linux
-./gradlew pnpmInstall
-
-# Windows
-./gradlew.bat pnpmInstall
-```
-
-```bash
-# macOS / Linux
-./gradlew haloServer
-
-# Windows
-./gradlew.bat haloServer
-```
-
-执行此命令后，会自动创建一个 Halo 的 Docker 容器并加载当前的插件，更多文档可查阅：<https://docs.halo.run/developer-guide/plugin/basics/devtools>
-
-### 运行方式 2
-
-> 此方式需要使用源码运行 Halo
-
-编译插件：
-
-```bash
-# macOS / Linux
-./gradlew build
-
-# Windows
-./gradlew.bat build
-```
-
-修改 Halo 配置文件：
-
-```yaml
-halo:
-  plugin:
-    runtime-mode: development
-    fixedPluginPath:
-      - "/path/to/plugin-starter"
-```
-
-最后重启 Halo 项目即可。
+[愚笨大学](https://uof.edu.kg) 的“诗与远方”分类。

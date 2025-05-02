@@ -53,4 +53,7 @@ build {
 
 halo {
     version = '2.20'
+      docker {
+    apiVersion = '1.47'
+  }
 }
